@@ -1,0 +1,192 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #5bc0de;
+	font-family: "Raleway";
+	min-width: 600px;
+}
+
+h1 {
+	color: #fff;
+	text-align: center;
+}
+
+h2 {
+	color: #fff;
+	text-align: center;
+}
+
+#lives {
+	font-size: 1.3em;
+}
+
+.square {
+	width: 30%;
+	border-radius: 5px;
+	padding-bottom: 30%;
+	background-color: #686b6d;
+	float:left;
+	margin: 1.66%;
+	transition: .5s ease all;   
+    transition-delay: .1s; 
+}
+
+.square:hover {
+	transform:scale(1.1,1.1);
+	transition-delay: .1s;
+}
+
+
+#container {
+	max-width: 500px;
+	margin: 40px auto;
+	height: 500px;
+	background: #d1d1d1;
+	padding: 40px 40px;
+}
+
+#panel {
+	background-color: white;
+	text-align: center;
+	text-transform: uppercase;
+	height: 50px;
+}
+
+#message {
+	display: inline-block;
+	margin: 6px auto;
+	font-size: 2em;
+	font-weight: 700;
+}
+
+.hit {
+	color: #5cb85c;
+	font-weight: bold;
+}
+
+@keyframes target {
+	0% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+.miss {
+	color: #e84747;
+	font-weight: bold;
+}
+
+.fa-rocket{
+	padding: 10px 40px;
+	font-size: 30px;
+	display: inline-block;
+	animation: spin 2s infinite alternate;
+	-webkit-animation: spin 2s infinite alternate linear;
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(45deg);
+	} to {
+		transform: rotate(210deg);
+	}
+}
+
+.fa-repeat {
+	font-size: 30px;
+}
+
+.fa-repeat:hover {
+	animation: rotate 2s ease infinite;
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	} to {
+		transform: rotate(180deg);
+	}
+}
+
+.fa-question {
+	font-size: 30px;
+}
+
+#left {
+	float: left;
+}
+
+#right {
+	float: right;
+}
+
+#reset {
+	border: none;
+	color: black;
+	height: 100%;
+	width: 80px;
+	outline: none;
+	text-transform: uppercase;
+	display: inline-block;
+	float: left;
+}
+
+#reset:hover {
+	color: white;
+	background: #5bc0de;
+	transition: .5s ease;
+}
+
+
+
+#info {
+	border: none;
+	color: black;
+	height: 100%;
+	width: 80px;
+	outline: none;
+	text-transform: uppercase;
+	display: inline-block;
+	float: right;
+}
+
+#info:hover {
+	color: white;
+	background: #5bc0de;
+	transition: .5s ease;
+}
+
+.info {
+  display: none;
+  padding: 15px;
+  margin-bottom: auto;
+  border: 1px solid transparent;
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+  text-align: center;
+  position: relative;
+}
+
+a {
+	display: inline-block;
+	float: right;
+	text-decoration: none;
+	font-weight: bold;
+	color: #31708f;
+}
+
+a:hover{
+	opacity: 0.5;
+}
+
+.visible {
+	display: block;
+}
+
+footer {
+	color: white;
+	text-align: center;
+	margin-bottom: 20px;
+	text-transform: lowercase;
+	font-size: 0.8em;
+	word-spacing: 0.4em;
+}

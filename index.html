@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Battleship Game</title>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+</head>
+<body>
+
+<h1>Battleship Game</h1>
+<h2>Rockets: <span id="lives">3</span></h2>
+
+<div id="panel">
+	<button id="reset"><i class="fa fa-repeat"></i></button>
+	<button id="info"><i class="fa fa-question"></i></button>
+	<i class="fa fa-rocket fa-flip-vertical" id="left" aria-hidden="true"></i>
+	<span id="message">targeting</span>
+	<i class="fa fa-rocket fa-rotate-180" id="right" aria-hidden="true"></i>
+</div>
+
+
+<div id="infoBox" class="info">
+	<a id="close" href="#">X</a>
+	<p>Welcome to <strong>The Best Game In The World!</strong><br> It's awesome and very exciting. However, it's completely pointless.</p>
+</div>
+
+<div id="container">
+	<div class="square"></div>
+	<div class="square"></div>
+	<div class="square"></div>
+	<div class="square"></div>
+	<div class="square"></div>
+	<div class="square"></div>
+	<div class="square"></div>
+	<div class="square"></div>
+	<div class="square"></div>
+</div>
+
+<footer>made with <i class="fa fa-coffee" aria-hidden="true"></i> and <i class="fa fa-heart" aria-hidden="true"></i> by matyss.</footer>
+
+
+<script type="text/javascript" src="battleship.js"></script>
+</body>
+</html>
